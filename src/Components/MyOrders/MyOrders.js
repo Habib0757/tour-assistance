@@ -6,7 +6,7 @@ import MyOrder from "../MyOrder/MyOrder";
 const MyOrders = () => {
   const { user } = useAuth();
   // fetching url
-  const url = `http://localhost:5000/orders/${user.email}`;
+  const url = `https://boiling-temple-03505.herokuapp.com/orders/${user.email}`;
   const [orders, setOrders] = useState([]);
   // fetching api method
   useEffect(() => {

@@ -6,7 +6,7 @@ const ManageOrders = () => {
   const [orders, setOrders] = useState([]);
   useEffect(() => {
     // fetching data from API
-    fetch("http://localhost:5000/orders")
+    fetch("https://boiling-temple-03505.herokuapp.com/orders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [orders]);

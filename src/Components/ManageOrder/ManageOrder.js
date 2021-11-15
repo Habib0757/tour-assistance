@@ -11,7 +11,7 @@ const ManageOrder = ({ order }) => {
     const deleteWarning = window.confirm("are yout sure to delete this one ? ");
     if (deleteWarning) {
       // fetch url
-      const url = `http://localhost:5000/orders/${id}`;
+      const url = `https://boiling-temple-03505.herokuapp.com/orders/${id}`;
       // fetch from API
       fetch(url, {
         method: "DELETE",
@@ -30,7 +30,7 @@ const ManageOrder = ({ order }) => {
     const updateOrder = { ...order };
     updateOrder.status = "approved";
     // fetching url
-    const url = `http://localhost:5000/orders/${id}`;
+    const url = `https://boiling-temple-03505.herokuapp.com/orders/${id}`;
     // fetch from API
     fetch(url, {
       method: "PUT",

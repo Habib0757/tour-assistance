@@ -8,7 +8,7 @@ const MyOrder = (props) => {
 
   const [ordersPlaces, setOrdersPlaces] = useState([]);
     useEffect(() => {
-      fetch("http://localhost:5000/orders")
+      fetch("https://boiling-temple-03505.herokuapp.com/orders")
         .then((res) => res.json())
         .then((data) => setOrdersPlaces(data));
     }, []);
@@ -19,7 +19,7 @@ const MyOrder = (props) => {
       "Are you sure to delete this tour plan?"
     );
     if (deleteWarning) {
-      const url = `http://localhost:5000/orders/${id}`;
+      const url = `https://boiling-temple-03505.herokuapp.com/orders/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -38,15 +38,10 @@ const MyOrder = (props) => {
   };
   return (
     <div>
-      {/* tour place container  */}
       <Col className="place-container">
-        {/* tour place  container  */}
         <Card className="card-container">
-          {/* tour  place image  */}
           <Card.Img variant="top" src={img} style={{ height: "300px" }} />
-          {/* tour place body  */}
           <Card.Body>
-            {/* tour place title  */}
             <Card.Title>
               {tourName}{" "}
               <sup
@@ -68,13 +63,9 @@ const MyOrder = (props) => {
               <span>Description: </span> {desc?.slice(0, 200)}
               {" ......"}
             </Card.Text>
-            {/* tour orderer name  */}
             <Card.Text className="text-start">Name: {name}</Card.Text>
-            {/* client email  */}
             <Card.Text className="text-start">Email: {email}</Card.Text>
-            {/* client phone  */}
             <Card.Text className="text-start">Phone: {phone}</Card.Text>
-            {/* client address  */}
             <Card.Text className="text-start">
               Parmanent address : {address}
             </Card.Text>

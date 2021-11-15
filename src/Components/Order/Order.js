@@ -10,13 +10,13 @@ const Order = () => {
   const { id } = useParams();
   const { user } = useAuth();
   const [place, setPlace] = useState([]);
-  const url = `http://localhost:5000/places/${id}`;
+ 
+  const url = `https://boiling-temple-03505.herokuapp.com/places/${id}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setPlace(data));
   }, [url]);
-
   const onSubmit = (data) => {
     // push some data
     data.tourName = place.name;
@@ -24,7 +24,7 @@ const Order = () => {
     data.img = place.img;
     data.desc = place.desc;
     // fetch from api
-    fetch("http://localhost:5000/orders", {
+    fetch("https://boiling-temple-03505.herokuapp.com/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

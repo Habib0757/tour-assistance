@@ -7,7 +7,7 @@ const AddPlace = () => {
   const onSubmit = (data) => {
     console.log(data)
     // fetching from database
-    fetch("http://localhost:5000/places", {
+    fetch("https://boiling-temple-03505.herokuapp.com/places", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -21,7 +21,7 @@ const AddPlace = () => {
         if (data.insertedId) {
           alert("Tour item added successfully");
         }
-        reset({})
+        reset({});
       });
   };
   return (

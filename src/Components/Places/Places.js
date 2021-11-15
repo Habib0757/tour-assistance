@@ -6,9 +6,9 @@ const Places = () => {
   const [places, setPlaces] = useState([]);
   // fetching for api
   useEffect(() => {
-    fetch("http://localhost:5000/places")
+    fetch("https://boiling-temple-03505.herokuapp.com/places")
       .then((res) => res.json())
-      .then((data) => setPlaces(data.slice(0,6)));
+      .then((data) => setPlaces(data.slice(0, 6)));
   }, []);
   return (
     <div>
