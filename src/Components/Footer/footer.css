@@ -1,0 +1,30 @@
+/* some social links design  */
+.social-links i {
+  margin: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+/* instagram icon  */
+.fa-instagram-square {
+  color: brown;
+}
+/* youtube icon  */
+.fa-youtube {
+  color: red;
+}
+/* google icon  */
+.fa-google {
+  color: yellow;
+}
+/* facebook icon  */
+.fa-facebook {
+  color: cornflowerblue;
+}
+/* list style  */
+ul > li {
+  list-style-type: none;
+}
+a {
+  color: white !important;
+  text-decoration: none;
+}

@@ -1,0 +1,25 @@
+/* intro container  */
+.intro-container {
+  height: 80vh;
+  background-image: url("https://www.tourism.gov.my/images/uploads/9f53699b-d8f0-454a-a21b-5c55ff34389f.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* intro section design  */
+.intro-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  height: 80vh;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0px 10px 10px 10px #ddd;
+
+  backdrop-filter: brightness(60%);
+}
+
+.intro-title {
+  font-size: 4rem;
+  color: #ffffff;
+  font-weight: 700;
+}

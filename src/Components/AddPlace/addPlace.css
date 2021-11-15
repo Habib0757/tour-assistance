@@ -1,0 +1,27 @@
+/* from contaier  */
+.form-containerr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+/* input design  */
+.form-containerr > .order-containerr > form > input {
+  display: block;
+  width: 50vw;
+  margin: 10px;
+  padding: 10px 20px;
+}
+/* order container design  */
+.form-containerr > .order-containerr {
+  box-shadow: 0px 10px 50px 10px #ddd;
+  border-radius: 1rem;
+  padding: 150px;
+}
+/* responsive part  */
+@media only screen and (max-width: 660px) {
+  .order-containerr {
+    margin: 0 auto;
+    width: 100%;
+  }
+}

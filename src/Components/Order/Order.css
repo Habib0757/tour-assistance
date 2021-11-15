@@ -1,0 +1,30 @@
+/* order information container  */
+.order-info-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ddd;
+  align-items: center;
+}
+/* imput design  */
+.place-order-container input {
+  display: block;
+  width: 100%;
+  margin: 10px;
+  padding: 10px 20px;
+}
+/* info and order container  */
+.information-and__order_container {
+  justify-content: center;
+  align-items: center;
+}
+/* order container  */
+.order-container {
+  min-height: 90vh;
+}
+/* media query for responsive  */
+@media only screen and (max-width: 660px) {
+  .place-order-container {
+    margin-top: 1rem;
+  }
+}

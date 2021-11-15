@@ -1,0 +1,28 @@
+.place-container a {
+  text-decoration: none;
+  color: black;
+}
+/* container design  */
+.place-container {
+  margin-top: 20px;
+}
+
+/* container hover effect  */
+.place-container:hover {
+  box-shadow: 0px 1px 23px 15px #ddd;
+  transition: all 0.2s ease-in;
+  border-radius: 1rem;
+}
+/* hover effect design  */
+.place-container a:hover {
+  color: rgb(22, 21, 21);
+}
+
+/* card design  */
+.card-container {
+  border-radius: 1rem;
+}
+/* image design  */
+.card-container img {
+  border-radius: 1rem;
+}
